@@ -8,7 +8,7 @@ class LyricsInput(BaseModel):
     lyrics: str
 
 # Carrega o modelo treinado
-with open("../models/model.pkl", "rb") as f:
+with open("models/model.pkl", "rb") as f:
     model = pickle.load(f)
 
 app = FastAPI()
