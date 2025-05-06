@@ -25,7 +25,7 @@ with col1:
         else:
             try:
                 response = requests.post(
-                    "https://lyrics-genre-classifier.onrender.com",  # Se local: "http://localhost:8000/predict"
+                    "https://lyrics-genre-classifier.onrender.com/predict",  # Se local: "http://localhost:8000/predict"
                     json={"lyrics": st.session_state.lyrics_input}
                 )
                 if response.status_code == 200:
