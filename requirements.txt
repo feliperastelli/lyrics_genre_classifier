@@ -1,6 +1,13 @@
 fastapi
 uvicorn
-scikit-learn
-pandas
 streamlit
 requests
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+nltk
+wordcloud
+collections
+pickle
