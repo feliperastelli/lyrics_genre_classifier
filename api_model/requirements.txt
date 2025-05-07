@@ -4,7 +4,5 @@ scikit-learn
 numpy
 pydantic
 requests
-pathlib
-string
 re
 pandas
