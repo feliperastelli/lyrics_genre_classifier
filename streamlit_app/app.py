@@ -8,6 +8,7 @@ def clear_input():
     st.session_state.lyrics_input = ""
 
 st.title("Classificador de Gênero Musical 🎵")
+st.subheader("Insira a letra da música abaixo e clique em 'Classificar' para descobrir o gênero musical - O modelo pode prever Funk, Gospel, Sertanejo e Bossa Nova")
 st.write("Digite a letra da música abaixo:")
 
 col1, col2 = st.columns(2)
@@ -35,7 +36,3 @@ with col1:
                     st.error("Erro na resposta da API")
             except Exception as e:
                 st.error(f"Erro ao conectar com a API: {e}")
-
-
-
-                 
