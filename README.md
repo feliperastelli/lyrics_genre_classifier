@@ -23,6 +23,7 @@ Foram utilizados quatro arquivos CSV localizados na pasta `data/`, contendo letr
 - Número de palavras únicas por gênero
 - Histogramas das distribuições
 - Na análise exploratório foi possível avaliar também o balanceamento entre as classes e notas comportamentos diferentes entre os gêneros.
+- Vendo a distribuição da varíavel, e observando uma "não normal", foi decidido não seguir com nenhuma transformação visto a utilização de TF-IDF
 
 ### 4. Modelagem e Avaliação
 - Separação treino/teste (80/20)
@@ -107,7 +108,6 @@ A solução apresentou boa performance de classificação, com destaque para os 
 │   ├── funk.csv
 │   ├── gospel.csv
 │   └── sertanejo.csv
-├── utils.py                # Funções auxiliares de preprocessamento
 ├── render.yaml             # Configurações para o deploy da API
 ├── requirements.txt
 └── README.md
