@@ -2,13 +2,17 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 import uvicorn
+from pathlib import Path
 
 # Classe para input via JSON
 class LyricsInput(BaseModel):
     lyrics: str
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+model_path = BASE_DIR / "models" / "model.pkl"
+
 # Carrega o modelo treinado
-with open("models/model.pkl", "rb") as f:
+with open(model_path , "rb") as f:
     model = pickle.load(f)
 
 app = FastAPI()
