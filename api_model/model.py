@@ -80,7 +80,7 @@ def train_and_evaluate(X_train, X_test, y_train, y_test):
         },
     ]
 
-    grid = GridSearchCV(pipeline, param_grid, cv=StratifiedKFold(n_splits=5), scoring="accuracy", verbose=1, n_jobs=1)
+    grid = GridSearchCV(pipeline, param_grid, cv=StratifiedKFold(n_splits=5), scoring="accuracy", verbose=1, n_jobs=-1)
     grid.fit(X_train, y_train)
 
     print("Melhor modelo:", grid.best_estimator_)
