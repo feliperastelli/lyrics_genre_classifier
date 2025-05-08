@@ -28,11 +28,11 @@ Foram utilizados quatro arquivos CSV localizados na pasta `data/`, contendo letr
 ### 4. Modelagem e Avaliação
 - Separação treino/teste (80/20)
 - Vetorização usando `TfidfVectorizer`: transforma os textos (strings) em vetores numéricos, usando o método TF-IDF (Term Frequency-Inverse Document Frequency), que pesa a importância das palavras em relação ao corpus.
-- Modelos testados:
-  - Naive Bayes
-  - Logistic Regression
-  - Random Forest
-  - LinearSVC
+- Modelos testados > Foram selecionados os modelos mais clássicos de classificação:
+  - Naive Bayes: Modelo baseado no teorama de Bayes
+  - Logistic Regression: Modelo logístico
+  - Random Forest: Modelo de árvore de decisão
+  - LinearSVC: Modelo de máquina de vetores de suporte
 - Validação cruzada (StratifiedKFold) e Otimização de hiperparâmetros via GridSearchCV: Para ser possível treinar os modelos com vários parâmetros e fatias diferente do dataset, com o objetivo de não enviesar o modelo antes de aplica-lo ao conjunto de teste.
 - Métrica principal: Acurácia - dado que as classes estão balanceadas.
 - Outras métricas de suporte foram utilizadas, como Precision, Recall e F1 - além da matriz de confusão.
